@@ -58,7 +58,7 @@ function outer() {
     );
   }
 }
-outter();
+outer();
 
 assert(
   window.inner == undeined,
