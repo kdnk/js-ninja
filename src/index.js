@@ -58,3 +58,9 @@ function outer() {
     );
   }
 }
+outter();
+
+assert(
+  window.inner == undeined,
+  "inner() はまだグローバルスコープに入っていない。"
+);
