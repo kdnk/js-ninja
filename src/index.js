@@ -49,8 +49,9 @@ function outer() {
   );
   assert(
     typeof inner2 === "function",
-    "inner()は宣言の前にスコープに入っている。"
+    "inner2()は宣言の前にスコープに入っている。"
   );
+  console.log("inner2: ", inner2);
   function inner() {}
   assert(typeof inner === "function", "inner()は宣言後のスコープに入っている");
   assert(
