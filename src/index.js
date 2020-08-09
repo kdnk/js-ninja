@@ -61,6 +61,6 @@ function outer() {
 outer();
 
 assert(
-  window.inner == undeined,
+  window.inner === undefined,
   "inner() はまだグローバルスコープに入っていない。"
 );
