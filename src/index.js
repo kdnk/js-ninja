@@ -52,5 +52,9 @@ function outer() {
       typeof inner === "function",
       "inner()は宣言後のスコープに入っている"
     );
+    assert(
+      window.inner === undefined,
+      "inner() はグローバルスコープに入っていない。"
+    );
   }
 }
